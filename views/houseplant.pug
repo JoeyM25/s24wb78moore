@@ -1,0 +1,11 @@
+extends layout
+
+include index
+
+block content
+  h1= title
+  - var results = [
+    {scientific_name: "Monstera deliciosa", common_name: "Monstera", difficulty: 3}
+    {scientific_name: "Epipremmum aureum", common_name: "Pothos", difficulty: 1}
+    {scientific_name: "Colocasia", common_name: "Elephant ear", difficulty: 7}
+  ]
