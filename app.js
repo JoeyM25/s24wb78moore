@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var houseplantRouter = require('./routes/houseplant')
 var gridRouter = require('./routes/grid')
+var randRouter = require('./routes/pick')
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/houseplant', houseplantRouter)
 app.use('/grid', gridRouter)
+app.use('/randomitem', randRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
